@@ -6,7 +6,7 @@ Ericsson Cloud Challenge for Fall 2023 Internship
 2. Create Kubernetes deployment `kubectl apply -f hello-app.yaml`
 3. Expose the deployment `kubectl expose deployment hello-world --type=LoadBalancer --port=8080`
 4. Get service URL for hello-world `minikube service list`
-5. Curl the URL `curl <URL>`
+5. Curl the `hello-world` service URL `curl <URL>`
 
 ## How to run WITH helm
 ### Creating package (Not necessary, already provided in project repository)
@@ -17,3 +17,5 @@ Ericsson Cloud Challenge for Fall 2023 Internship
 
 ### Deploying package
 5. Install the chart `helm install hello-world ./helloworld-chart/`
+6. Display the current helm charts `helm ls`
+6. Curl the `hello-world-service` service URL 

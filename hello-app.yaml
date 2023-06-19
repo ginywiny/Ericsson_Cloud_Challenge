@@ -25,9 +25,6 @@ metadata:
   name: hello-world
 spec:
   allocateLoadBalancerNodePorts: true
-  clusterIP: 10.100.167.196
-  clusterIPs:
-  - 10.100.167.196
   externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
