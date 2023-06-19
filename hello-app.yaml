@@ -22,11 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: "2023-06-19T04:00:05Z"
   name: hello-world
-  namespace: default
-  resourceVersion: "444"
-  uid: 0d70797c-db2d-4418-992b-1514f891ebfe
 spec:
   allocateLoadBalancerNodePorts: true
   clusterIP: 10.100.167.196
@@ -48,19 +44,3 @@ spec:
   type: LoadBalancer
 status:
   loadBalancer: {}
-## This type does not work!
-# ---
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: hello-app-service
-# spec:
-#   # type: NodePort
-#   type: LoadBalancer
-#   selector:
-#     app.kubernetes.io/name: hello-world
-#   ports:
-#   - protocol: TCP
-#     port: 8080
-#     targetPort: 8080
-#     # nodePort: 31579
