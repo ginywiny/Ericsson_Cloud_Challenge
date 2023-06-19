@@ -6,7 +6,9 @@ Ericsson Cloud Challenge for Fall 2023 Internship
 2. Create Kubernetes deployment `kubectl apply -f hello-app.yaml`
 3. Get service URL for hello-world `minikube service list`
 4. Curl the `hello-world` service URL `curl <URL>`
-NOTE: The port for the service URL is NOT 8080, because nodeports for Kubernetes services must be betweeen 30000 and 32767. 
+#### NOTE: The port for the service URL is NOT 8080, because nodeports for Kubernetes services must be betweeen 30000 and 32767. 
+
+#### If for any reason the service does not work whereby the URL returns Connection Refused (has happened to me), manually expose the hello-world deployment in CLI using `kubectl expose deployment hello-world --type=LoadBalancer --port=8080`
 
 ## How to run WITH helm
 ### Creating package (Not necessary, already provided in project repository)
