@@ -8,6 +8,10 @@ Ericsson Cloud Challenge for Fall 2023 Internship
 3. Get service URL for hello-world `minikube service list`
 4. Curl the `hello-world` service URL `curl <URL>`
 NOTE: The port for the service URL is NOT 8080, because nodeports for Kubernetes services must be betweeen 30000 and 32767. 
+<!-- 3. Expose the deployment `kubectl expose deployment hello-world --type=LoadBalancer --port=8080` -->
+3. Get service URL for hello-world `minikube service list`
+4. Curl the `hello-world` service URL `curl <URL>`
+NOTE: The port for the service URL is NOT 8080, because nodeports for Kubernetes services must be betweeen 30000 and 32767. 
 
 ## How to run WITH helm
 ### Creating package (Not necessary, already provided in project repository)
